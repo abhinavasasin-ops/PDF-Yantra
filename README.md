@@ -4,7 +4,7 @@ How it works:
 Ingest: PDF.js extracts text per page in the browser.
 Chunk: each page is split into overlapping ~180-word chunks tagged with file name and page.
 Retrieve: BM25 keyword ranking (plain JavaScript) returns the top 6 chunks from the selected documents.
-Generate: Google Gemini answers using only those excerpts, cites [file, p.N], and says so when the answer isn't in the documents.
+Generate: Google Gemini answers using only those excerpts
 Verify: clicking a citation renders that page in the side reader.
 Features
 Multi-document chat with per-document selection
